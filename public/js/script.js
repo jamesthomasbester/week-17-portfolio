@@ -5,10 +5,10 @@ fetch('https://api.github.com/users/jamesthomasbester/repos')
         result.forEach( element => {
             console.log(element)
             $('#body').append(`
-                <div class="card mb-3 ${element.language}" style="max-width: 540px;">
+                <div class="card mb-3 ${element.language}" style="height: 300px;">
                     <div class="row g-0">
-                        <div class="col-md-4 text-center" style="padding: 10px; color: black;">
-                        <iframe src="https://jamesthomasbester.github.io/${element.name}"></iframe>
+                        <div class="col-md-4 text-center" style="padding: 10px; height: 100%; color: black;">
+                        <iframe src="https://jamesthomasbester.github.io/${element.name}" style="height: 280px; width: 400px;"></iframe>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
